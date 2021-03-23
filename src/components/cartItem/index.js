@@ -2,19 +2,19 @@ import React from 'react'
 
 import{Container,Picture,Info} from './styles';
 
-export default function CartItem() {
+export default function CartItem({urlImage,name,price}) {
     return (
         <Container>
-            <Picture/>
+            <Picture src={urlImage}/>
             <Info>
                 <strong>
-                    Trufa
+                    {name}
                 </strong>
                 <p>
-                    R$ 1,23
+                    R$ {price}
                 </p>
                 <strong>
-                    R$ 1,11
+                    R$ {price}
                 </strong>
             </Info>
         </Container>
