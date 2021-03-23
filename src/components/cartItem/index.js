@@ -1,8 +1,10 @@
 import React from 'react'
 
 import{Container,Picture,Info} from './styles';
+import {FormatPrice} from '../../utils/formatPrice'
 
 export default function CartItem({urlImage,name,price}) {
+    
     return (
         <Container>
             <Picture src={urlImage}/>
@@ -11,10 +13,10 @@ export default function CartItem({urlImage,name,price}) {
                     {name}
                 </strong>
                 <p>
-                    R$ {price}
+                    {FormatPrice(price)}
                 </p>
                 <strong>
-                    R$ {price}
+                    {FormatPrice(price)}
                 </strong>
             </Info>
         </Container>
