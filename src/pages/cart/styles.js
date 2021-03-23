@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
     flex:1;
     display:flex;
+    flex-direction:column;
     align-items:center;
     justify-content:center;
     margin: 50px 0;
@@ -65,6 +66,26 @@ export const Button = styled.button`
     background-color:#0D78F9;
     font-size:18px;
     font-weight:bold;
-
+    transition: opacity 0.2s;
+    :hover{
+        opacity:0.8;
+    }
 `;
   
+
+export const SwitchCartButton = styled.button`
+    margin-top:40px;
+    height:40px;
+    padding:8px;
+    border:none;
+    border-radius:4px;
+    background-color:#343A40;
+    font-size:18px;
+    font-weight:bold;
+    transition: opacity 0.2s;
+    :hover{
+        opacity:0.8;
+    }
+
+`;
+
