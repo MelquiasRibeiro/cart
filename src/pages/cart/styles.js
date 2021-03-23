@@ -8,7 +8,7 @@ export const Container = styled.div`
     justify-content:center;
     margin: 50px 0;
 `;
-export const CartContainer =styled.div`
+export const CartContainer = styled.div`
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -26,8 +26,8 @@ export const Header = styled.div`
     padding:8px;
     border-bottom: solid 1px #e5e5e5;
 `;
-  
-export const Total  = styled.div` 
+
+export const Total = styled.div` 
         width:100%;
         display:flex;
         flex-direction:column;
@@ -50,7 +50,7 @@ export const Total  = styled.div`
             font-weight:bold;
         }
 `;
-  
+
 export const Footer = styled.div` 
         padding:16px;
         display:flex;
@@ -58,7 +58,7 @@ export const Footer = styled.div`
         justify-content:center;
         width:100%;
 `;
-  
+
 export const Button = styled.button`
     height:40px;
     width:100%;
@@ -73,7 +73,6 @@ export const Button = styled.button`
         opacity:0.8;
     }
 `;
-  
 
 export const SwitchCartButton = styled.button`
     margin-top:40px;
@@ -90,4 +89,3 @@ export const SwitchCartButton = styled.button`
     }
 
 `;
-

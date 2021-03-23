@@ -1,23 +1,23 @@
-import React from 'react'
-import Routes from './routes';
-import {BrowserRouter} from 'react-router-dom'
-import GlobalStyle from './styles/global';
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
+import Routes from './routes';
+import GlobalStyle from './styles/global';
 
 function App() {
   return (
     <BrowserRouter>
-      <GlobalStyle/>
+      <GlobalStyle />
       <ToastContainer
-          position="top-center"
-          autoClose={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
+        position="top-center"
+        autoClose={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
       />
-      <Routes/>
+      <Routes />
     </BrowserRouter>
   );
 }

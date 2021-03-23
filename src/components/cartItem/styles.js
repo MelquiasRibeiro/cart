@@ -1,4 +1,4 @@
-import styled,{ keyframes, css } from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
 
 const rotate = keyframes`
   from {
@@ -9,7 +9,6 @@ const rotate = keyframes`
   }
 `;
 
-
 export const Container = styled.div`
   display:flex;
   flex-direction:row;
@@ -17,9 +16,8 @@ export const Container = styled.div`
   padding:16px;
   align-items:center;
   
-  ${(props) =>
-    props.loading &&
-    css`
+  ${(props) => props.loading
+    && css`
       svg {
         animation: ${rotate} 2s infinite;
         }
