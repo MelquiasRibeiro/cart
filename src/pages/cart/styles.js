@@ -15,7 +15,9 @@ export const CartContainer =styled.div`
     background-color:#ffffff;
     min-width:500px;
     border-radius:8px;
-    box-shadow: 5px 5px 5px #D2D5C0;
+    -webkit-box-shadow: 11px 21px 28px -8px rgba(0,0,0,0.25);
+    -moz-box-shadow: 11px 21px 28px -8px rgba(0,0,0,0.25);
+    box-shadow: 11px 21px 28px -8px rgba(0,0,0,0.25);
 `;
 export const Header = styled.div`
     text-align:center;

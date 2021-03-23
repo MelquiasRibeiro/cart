@@ -1,4 +1,14 @@
-import styled from 'styled-components';
+import styled,{ keyframes, css } from 'styled-components';
+
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg)
+  }
+`;
+
 
 export const Container = styled.div`
   display:flex;
@@ -6,6 +16,14 @@ export const Container = styled.div`
   width:100%;
   padding:16px;
   align-items:center;
+  
+  ${(props) =>
+    props.loading &&
+    css`
+      svg {
+        animation: ${rotate} 2s infinite;
+        }
+    `}
 `;
 
 export const Picture = styled.img`
