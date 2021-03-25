@@ -61,7 +61,7 @@ export default function Cart() {
         </Total>
         <Footer>
           <Button onClick={() => notify('compra realizada com sucesso!', 'sucess')}>
-            Finalizar comprar
+            Finalizar compra
           </Button>
         </Footer>
       </CartContainer>
@@ -69,8 +69,8 @@ export default function Cart() {
       <SwitchCartButton onClick={() => setFreeShipping(!freeShipping)}>
         {
                 freeShipping
-                  ? 'Ver carrinho sem frete Grátis'
-                  : 'Ver carrinho com frete Grátis'
+                  ? 'Ver carrinho sem frete grátis'
+                  : 'Ver carrinho com frete grátis'
                 }
       </SwitchCartButton>
     </Container>
